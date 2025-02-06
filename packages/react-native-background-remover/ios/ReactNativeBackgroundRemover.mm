@@ -1,6 +1,10 @@
 #import "ReactNativeBackgroundRemover.h"
 #import "ReactNativeBackgroundRemover-Swift.h"
 
+#ifdef RCT_NEW_ARCH_ENABLED
+#import <RNBackgroundRemoverSpec/RNBackgroundRemoverSpec.h>
+#endif
+
 @implementation BackgroundRemover {
   BackgroundRemoverSwift *backgroundRemover;
 }

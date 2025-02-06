@@ -48,15 +48,7 @@ def supportsNamespace() {
 }
 
 android {
-  if (supportsNamespace()) {
-    namespace "com.backgroundremover"
-
-    sourceSets {
-      main {
-        manifest.srcFile "src/main/AndroidManifestNew.xml"
-      }
-    }
-  }
+  namespace "com.backgroundremover"
 
   compileSdkVersion getExtOrIntegerDefault("compileSdkVersion")
 
@@ -91,7 +83,6 @@ android {
       if (isNewArchitectureEnabled()) {
         java.srcDirs += [
           "src/newarch",
-          // This is needed to build Kotlin project with NewArch enabled
           "${project.buildDir}/generated/source/codegen/java"
         ]
       } else {
