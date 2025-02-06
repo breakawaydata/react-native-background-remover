@@ -1,5 +1,6 @@
 {
   "name": "react-native-background-remover-monorepo",
+  "version": "0.3.3",
   "private": true,
   "workspaces": [
     "apps/*",
