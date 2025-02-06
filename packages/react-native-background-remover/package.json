@@ -1,6 +1,6 @@
 {
   "name": "react-native-background-remover",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "This package removes background",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -36,7 +36,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
-    "prepare": "bob build",
+    "prepare": "cp ../../README.md ./ && bob build",
     "release": "release-it"
   },
   "keywords": [
